@@ -5,5 +5,8 @@
 	<classpathentry kind="lib" path="/j4kdemo/lib/gluegen-rt.jar"/>
 	<classpathentry kind="lib" path="/j4kdemo/lib/jogl-all.jar"/>
 	<classpathentry kind="lib" path="/j4kdemo/lib/ufdw.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Code2017"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator.TALAP01/wpilib/java/current/lib/WPILib.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator.TALAP01/wpilib/java/current/lib/NetworkTables.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

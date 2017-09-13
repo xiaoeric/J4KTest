@@ -44,7 +44,7 @@ import edu.ufl.digitalworlds.j4k.VideoFrame;
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-@SuppressWarnings("serial")
+@SuppressWarnings("unchecked")
 public class ViewerPanel3D extends OpenGLPanel
 {
 	private float view_rotx = 0.0f, view_roty = 0.0f, view_rotz = 0.0f;

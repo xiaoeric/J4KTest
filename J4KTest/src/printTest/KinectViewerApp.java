@@ -16,6 +16,7 @@ import edu.ufl.digitalworlds.gui.DWApp;
 import edu.ufl.digitalworlds.j4k.J4K1;
 import edu.ufl.digitalworlds.j4k.J4K2;
 import edu.ufl.digitalworlds.j4k.J4KSDK;
+import edu.wpi.first.wpilibj.networktables.NetworkTable;
 
 /*
  * Copyright 2011-2014, Digital Worlds Institute, University of 
@@ -51,7 +52,7 @@ import edu.ufl.digitalworlds.j4k.J4KSDK;
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-@SuppressWarnings("serial")
+@SuppressWarnings("unchecked")
 public class KinectViewerApp extends DWApp implements ChangeListener
 {
 	
@@ -67,6 +68,7 @@ public class KinectViewerApp extends DWApp implements ChangeListener
 	JCheckBox show_video;
 	JCheckBox mask_players;
 	JLabel accelerometer;
+	static NetworkTable table;
 	
 	public void GUIsetup(JPanel p_root) {
 		
@@ -223,6 +225,8 @@ public class KinectViewerApp extends DWApp implements ChangeListener
     	createMainFrame("Kinect Viewer App");
     	app=new KinectViewerApp();
     	setFrameSize(730,570,null);
+    	
+    	table = NetworkTable.getTable("datatable");
     }
 	
 	@Override
